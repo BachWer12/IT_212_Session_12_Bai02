@@ -1,0 +1,65 @@
+===== BÀI TẬP 02: XÂY DỰNG TÀI LIỆU SRS CHO TÍNH NĂNG eKYC =====
+===== FILE 01: TOÀN BỘ PROMPT ĐÃ SỬ DỤNG =====
+
+======================================================================
+PROMPT 1: Yêu cầu sinh tài liệu SRS hoàn chỉnh
+======================================================================
+"Bạn hãy đóng vai một Business Analyst chuyên viết tài liệu Software Requirements Specification (SRS) theo chuẩn IEEE.
+
+Dựa trên tài liệu phân tích nghiệp vụ eKYC sau đây, hãy viết một tài liệu SRS hoàn chỉnh:
+
+[DÁN NỘI DUNG PHÂN TÍCH TỪ BÀI TẬP 01 - Actors, Business Flow, FR, NFR, User Stories, Use Cases]
+
+Yêu cầu cấu trúc tài liệu SRS:
+
+Phần 1: Introduction
+1.1 Purpose (Mục đích tài liệu)
+1.2 Scope (Phạm vi hệ thống eKYC)
+1.3 Definitions, Acronyms (Định nghĩa các thuật ngữ: eKYC, OCR, Liveness Check, Face Matching, AML, CCD, KYC...)
+1.4 References (Tài liệu tham khảo)
+1.5 Overview (Tổng quan tài liệu)
+
+Phần 2: Overall Description
+2.1 Product Perspective (Góc nhìn sản phẩm - hệ thống con của Core Banking)
+2.2 Product Functions (Chức năng tổng quan)
+2.3 User Classes and Characteristics (Khách hàng, Giao dịch viên, Admin)
+2.4 Operating Environment (Môi trường vận hành: Mobile App + Backend API)
+2.5 Design and Implementation Constraints (Giới hạn về công nghệ, pháp lý)
+2.6 Assumptions and Dependencies (Giả định và phụ thuộc)
+
+Phần 3: Specific Functional Requirements (Chi tiết từng module)
+3.1 Module đăng ký thông tin
+3.2 Module OCR/xử lý CCCD
+3.3 Module xác thực khuôn mặt
+3.4 Module kích hoạt tài khoản
+
+Phần 4: Non-Functional Requirements
+4.1 Security (Bảo mật dữ liệu cá nhân)
+4.2 Performance (Thời gian phản hồi API)
+4.3 Availability (Tính sẵn sàng)
+4.4 Scalability (Khả năng mở rộng)
+4.5 Compliance (Tuân thủ pháp luật)
+
+Phần 5: Visual Diagrams (Yêu cầu sinh Mermaid code)
+5.1 Use Case Diagram - Mô tả luồng thao tác User và System
+5.2 Sequence Diagram - Luồng đăng ký tài khoản eKYC
+5.3 Activity Diagram - Quy trình xử lý hồ sơ eKYC
+
+Hãy trình bày chuyên nghiệp, chi tiết, đúng chuẩn IEEE SRS."
+
+======================================================================
+PROMPT 2: Yêu cầu bổ sung và hoàn thiện
+======================================================================
+"Bổ sung vào tài liệu SRS các phần sau:
+
+1. Business Rules được nhúng vào phần Functional Requirements (ví dụ: tuổi tối thiểu 18, hạn mức giao dịch theo trạng thái xác thực).
+
+2. API Endpoint Specifications dạng bảng cho từng module:
+   - Endpoint URL
+   - HTTP Method
+   - Request/Response schema
+   - HTTP Status codes
+
+3. Thêm phần Acceptance Criteria cho từng Use Case chính.
+
+4. Vẽ thêm Component Diagram (Mermaid) mô tả kiến trúc hệ thống: Mobile App -> API Gateway -> eKYC Service -> Core Banking."
